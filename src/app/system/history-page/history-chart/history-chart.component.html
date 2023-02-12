@@ -1,0 +1,19 @@
+<section class="section">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="card">
+        <div class="card-block">
+          <section class="example" style="display: flex; justify-content: center; align-items: center">
+            <canvas baseChart
+                    [labels]="doughnutChartLabels"
+                    [datasets]="doughnutChartDatasets"
+                    [options]="doughnutChartOptions"
+                    [legend]="true"
+                    [type]="'doughnut'">
+            </canvas>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

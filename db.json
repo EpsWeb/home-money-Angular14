@@ -5,10 +5,22 @@
       "email": "wfm@mail.ru",
       "password": "12345678",
       "name": "Администратор"
+    },
+    {
+      "email": "asd@ws",
+      "password": "asdasd@sdf",
+      "name": "asdasdasd",
+      "id": 2
+    },
+    {
+      "email": "daniile@nanolocksec.com",
+      "password": "123123123",
+      "name": "Maor",
+      "id": 3
     }
   ],
   "bill": {
-    "value": 100000,
+    "value": 95000,
     "currency": "RUB"
   },
   "categories": [
@@ -23,9 +35,14 @@
       "id": 2
     },
     {
-      "id": 3,
-      "name": "Машина",
-      "capacity": 7000
+      "name": "Машина ",
+      "capacity": 3000,
+      "id": 3
+    },
+    {
+      "name": "Maor",
+      "capacity": 123,
+      "id": 4
     }
   ],
   "events": [
@@ -34,7 +51,7 @@
       "type": "income",
       "amount": 1250,
       "category": 2,
-      "date": "12.06.2017 19:49:02",
+      "date": "07.02.2023 19:49:02",
       "description": "Подарили еду в гостях"
     },
     {
@@ -42,32 +59,48 @@
       "type": "outcome",
       "amount": 1300,
       "category": 1,
-      "date": "13.06.2017 19:49:02",
+      "date": "06.02.2023 19:49:02",
       "description": "Купил посудомоечную машину"
     },
     {
       "type": "income",
       "amount": 1480,
       "category": 2,
-      "date": "17.06.2017 14:00:48",
+      "date": "05.02.2023 14:00:48",
       "id": 3,
       "description": "Поход в окей с баллами. Бесплатная еда"
     },
     {
       "type": "outcome",
-      "amount": 2470,
-      "category": 2,
-      "date": "17.06.2017 14:00:58",
-      "id": 4,
-      "description": "Закупка на неделю"
+      "amount": 4000,
+      "category": 3,
+      "date": "07.02.2023 14:01:58",
+      "id": 5,
+      "description": "Заправка + проход ТО"
     },
     {
       "type": "outcome",
-      "amount": 4000,
-      "category": 3,
-      "date": "10.06.2017 14:01:58",
-      "id": 5,
-      "description": "Заправка + проход ТО"
+      "amount": 8000,
+      "category": 2,
+      "date": "30.01.2023 18:03:01",
+      "description": "Пожрал",
+      "id": 6
+    },
+    {
+      "type": "income",
+      "amount": 10000,
+      "category": 1,
+      "date": "30.01.2023 18:07:50",
+      "description": "wer",
+      "id": 7
+    },
+    {
+      "type": "outcome",
+      "amount": 5000,
+      "category": 1,
+      "date": "08.02.2023 13:41:03",
+      "description": "test",
+      "id": 8
     }
   ]
 }

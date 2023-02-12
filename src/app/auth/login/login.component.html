@@ -1,0 +1,57 @@
+<p class="text-xs-center">Войдите для работы</p>
+<div class="alert alert-{{message.type}}" *ngIf="message.text">{{message.text}}</div>
+<form (ngSubmit)="submit()" [formGroup]="form">
+  <div [ngClass]="{'has-error': form.get('email')?.invalid && form.get('email')?.touched}"
+       class="form-group"
+  >
+    <label for="email">Email</label>
+    <input
+      class="form-control underlined"
+      formControlName="email"
+      id="email"
+      placeholder="Введите ваш email"
+      type="text"
+    >
+    <span
+      *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+      class="form-help-text"
+    >
+      <span *ngIf="form.get('email')?.hasError('required')">
+        Email field is required
+      </span>
+      <span *ngIf="form.get('email')?.hasError('email')">
+        Email is not correct
+      </span>
+    </span>
+  </div>
+  <div [ngClass]="{'has-error': form.get('email')?.invalid && form.get('email')?.touched}"
+       class="form-group">
+    <label for="password">Пароль</label>
+    <input
+      class="form-control underlined"
+      formControlName="password"
+      id="password"
+      placeholder="Пароль"
+      type="password"
+    >
+    <span
+      *ngIf="form.get('password')?.invalid && form.get('password')?.touched"
+      class="form-help-text"
+    >
+      <span *ngIf="form.get('password')?.hasError('required')">
+        Password field is required
+      </span>
+      <span *ngIf="form.get('password')?.hasError('minlength')">
+        Password min length is 6
+      </span>
+    </span>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-block btn-primary" type="submit">Войти</button>
+  </div>
+  <div class="form-group">
+    <p class="text-muted text-xs-center">
+      Нет аккаунта? <a routerLink="/registration">Зарегистрироваться!</a>
+    </p>
+  </div>
+</form>
