@@ -16,7 +16,7 @@ export class UsersService extends BaseApi {
   }
 
   createNewUser(user: User): Observable<User> {
-    return this._http.post<User>(`users`, user)
+    return this.post<User>(`users`, user)
   }
 
 }

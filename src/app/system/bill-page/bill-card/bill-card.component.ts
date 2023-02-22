@@ -7,11 +7,11 @@ import {Bill} from '../../shared/models/bill.model';
   styleUrls: ['./bill-card.component.scss']
 })
 export class BillCardComponent implements OnInit {
-  @Input() bill?: Bill
+  @Input() bill: Bill
   @Input() currency: any
 
-  dollar?: number;
-  euro?: number;
+  dollar: number;
+  euro: number
 
   constructor() { }
 

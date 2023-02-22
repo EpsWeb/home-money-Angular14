@@ -1,8 +1,7 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {BaseApi} from '../../../shared/core/base-api';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Bill} from '../models/bill.model';
 import {WfmEvent} from '../models/event.model';
 
 @Injectable({
@@ -13,7 +12,6 @@ export class EventsService extends BaseApi {
   constructor(public override _http: HttpClient) {
     super(_http)
   }
-
 
 
   getEvents(): Observable<WfmEvent[]> {
@@ -27,7 +25,7 @@ export class EventsService extends BaseApi {
   getEventById(id: string): Observable<WfmEvent> {
     return this.get(`events/${id}`);
   }
- }
+}
 
 
 
