@@ -6,9 +6,8 @@ import {AuthModule} from './auth/auth.module';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthRoutingModule} from './auth/auth-routing.module';
 import {SharedModule} from './shared/shared.module';
-import {UsersService} from './shared/services/users.servive';
+import {UsersService} from './shared/services/users.service';
 import {AuthService} from './shared/services/auth.service';
-import {SystemModule} from './system/system.module';
 import {AuthGuard} from './system/shared/services/auth.guard';
 
 @NgModule({
